@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url(../assiets/backgroundImg.jpg); */
+  font-family: "Ranchers", cursive;
+
+  user-select: none;
+}
+#nav-bar {
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-element {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+#nav-element li {
+  float: left;
+}
+
+#nav-button {
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#nav-button:hover {
+  background-color: goldenrod;
+}
+#homeContent {
+  display: flex;
+
+  margin: 0px;
+  padding: 0px;
+}
+.order-button{
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#border {
+  padding: 10px;
+  margin: 0px;
+  background-color: black;
+}
+
+#about-us {
+  padding: 125px;
+  margin: 0px;
+}
+#about-us ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#about-us li {
+  display: block;
+  width: 50%;
+}
+
+/* menu heading */
+#our-menu {
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 8px;
+  text-align: center;
+  font-size: larger;
+  /* background-color: black; */
+  color: rgb(2, 2, 2);
+}
+
+/* menu bar */
+#menu {
+  margin: 0px;
+  padding: 10px;
+  align-items: center;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+#menu ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: larger;
+  display: flex;
+
+  /* justify-content: space-between; */
+}
+#menu a {
+}
+#menu li {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  font-size: larger;
+  font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+  background-color: goldenrod;
+  /* margin-left: 160px; */
+}
+#menu li a:hover {
+  color: aliceblue;
+}
+
+/* menu content */
+
+/* #create-your-pizza  ul li {
+  display: flex;
+
+
+} */
+
+.menu-contain {
+  /* margi */
+}
+
+.menu {
+  margin: 0px;
+  padding: 10px;
+  align-items: center;
+  font-family: "Ranchers", cursive;
+  font-size: 20px;
+
+  /* display: none; */
+}
+
+.menu ul {
+  list-style: none;
+}
+
+
+#ul-cyp {
+  list-style: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+  justify-content: space-between;
+}
+
+#cyp {
+  /* align-items: center; */
+  display: inline-block;
+  /* border: solid black 1px; */
+  /* background-color: whitesmoke; */
+}
+
+#create-your-pizza{
+
+}
+/* Contact */
+
+#contact {
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 8px;
+  text-align: center;
+  font-size: larger;
+  /* background-color: black; */
+  color: bl;
+}
+
+#contact-form input {
+  width: 250px;
+  height: 50px;
+  border: none;
+  margin: 1px;
+  padding: 2px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#contact-form input:hover {
+  background-color: goldenrod;
+}
+#contact-form {
+  text-align: center;
+  padding: 0px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#contact-form ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+/* 
+map
+ */
+#location-box {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 3px;
+}
+
+#location-cont {
+  /* background-color: whitesmoke; */
+  margin: 2px;
+  font-family: "Ranchers", cursive;
+}
+
+#map {
+  background-color: black;
+  margin: 2px;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer img {
+  width: 60px;
+  height: 60px;
+}
+
+#footer {
+  background-color: black;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <title>Home Page MTL-PIZZERIA</title>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <ul id="nav-element">
+        <li><img src="../assiets/companyLOGO.PNG" alt="" /></li>
+        <li><a id="nav-button" href="./home.html">HOME</a></li>
+        <li><a id="nav-button" href="#about-us">ABOUT</a></li>
+        <li><a id="nav-button" href="#menu" class="menuTest">MENU</a></li>
+        <li><a id="nav-button" href="#contact">CONTACT</a></li>
+        <li style="float: right">
+          <a id="nav-button" href="../colorlib-regform-7/index.html">ACCOUNT</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="homeContent">
+      <img
+        style="object-fit: cover; width: fit-content; width: 100%"
+        src="../assiets/00/HERO-IMAGE-NEW-2-1.jpg"
+        alt=""
+      />
+      <div class="order-button">
+        <img
+          style="margin-top: 10px"
+          src="../assiets/companyLOGO.PNG"
+          alt=""
+        /><br />
+        <h2 style="color: white; margin-top: 10px">
+          Pizzeria located in the Heart of Montreal. Wood-fired pizzas and fresh
+          homemade sandwiches.
+        </h2>
+        <br />
+        <h1 style="color: white; margin-top: 10px">Order</h1>
+
+        <a
+          style="margin-top: 30px; color: goldenrod; text-decoration: none"
+          href="../colorlib-regform-7/index.html"
+          ><h1>To Take Away/ Delivery</h1>
+        </a>
+      </div>
+    </div>
+
+    <!-- <div id="border">
+    </div> -->
+
+    <div id="about-us">
+      <ul>
+        <li style="">
+          <h1>ABOUT MTL-PIZZERIA</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+            deserunt laboriosam eligendi soluta labore? Minima omnis in, eaque
+            magnam eum soluta esse assumenda, sunt at blanditiis ullam saepe
+            necessitatibus delectus.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+            deserunt laboriosam eligendi soluta labore? Minima omnis in, eaque
+            magnam eum soluta esse assumenda, sunt at blanditiis ullam saepe
+            necessitatibus delectus.
+          </p>
+        </li>
+        <li style="margin-bottom: 50px; float: right">
+          <img src="../assiets/aboutUs.webp" alt="" />
+        </li>
+      </ul>
+    </div>
+
+    <div id="our-menu">
+      <h1>OUR MENU</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li id="createPizza-btn">CREATE YOUR PIZZA</li>
+        <li id="signaturePizza-btn">SIGNATURE PIZZAS</li>
+        <li id="sandwiches-btn">SANDWICHES</li>
+        <li id="salad-btn">SALADS</li>
+        <li id="dessert-btn">DESSERTS</li>
+      </ul>
+    </div>
+
+    <!-- one menu -->
+
+    <div style="display: none" id="create-your-pizza" class="menu">
+      <ul id="ul-cyp" style="display: flex">
+        <li id="cyp">
+          <img
+            width="400"
+            height="250"
+            src="../assiets/pizzaDough.jpg"
+            alt=""
+          />
+          <h3>CHOOSE YOUR CRUST</h3>
+          <ul>
+            <li>Traditional $10.75</li>
+            <li>Whole Wheat $10.75</li>
+            <li>Vegan Cauliflower Crust $13.75</li>
+            <li>Keto Crust</li>
+          </ul>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="400"
+            height="250"
+            src="../assiets/pizzaSauce.jpg"
+            alt=""
+          />
+          <h3>CHOOSE YOUR SAUCE</h3>
+          <ul>
+            <li>Pomodoro</li>
+            <li>Alfedo</li>
+            <li>Rose</li>
+            <li>Aglio e Olio</li>
+            <li>Pesto (+.75)</li>
+          </ul>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="400"
+            height="250"
+            src="../assiets/cheeseToppings.jpg"
+            alt=""
+          />
+          <h3>CLASSIC TOPPINGS</h3>
+          <h3 id="price">+ $1each</h3>
+          <ul>
+            <li>Blue Cheese</li>
+            <li>Feta</li>
+            <li>Vegan Cheese</li>
+            <li>Goat Cheese</li>
+            <li>Alfrado Cheese</li>
+            <li>Cheddar Cheese</li>
+            <li>American Cheese</li>
+          </ul>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="400"
+            height="250"
+            src="../assiets/pizzaToppings.jpg"
+            alt=""
+          />
+          <h3>CLASSIC TOPPINGS</h3>
+          <h3 id="price">+ $1each</h3>
+          <ul>
+            <li>Anchovies</li>
+            <li>Arugula</li>
+            <li>Artichoke</li>
+            <li>Banana Pappers</li>
+            <li>Cherry Tomatoes</li>
+            <li>EggPlant</li>
+            <li>Jalapenos</li>
+            <li>Mushrooms</li>
+            <li>Olives</li>
+            <li>Onions</li>
+            <li>Peppers</li>
+            <li>Pineapple</li>
+            <li>Roasted Red Peppers</li>
+            <li>Spinach</li>
+            <li>Sundried Tomatoes</li>
+            <li>Fresh Basil</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- menu two -->
+
+    <div style="display: none" id="selectPizza" class="menu">
+      <ul id="ul-cyp" style="">
+        <li id="cyp">
+          <img width="500" height="500" src="../assiets/fourChees.jpg" alt="" />
+          <h2>4 Cheese</h2>
+          <h4>
+            Blue Cheese, Goat Cheese, Parmesan, <br />
+            Mozzarella
+          </h4>
+          <h3 id="price">$14.50</h3>
+        </li>
+
+        <li id="cyp">
+          <img width="500" height="500" src="../assiets/theBros.jpg" alt="" />
+          <h2>The Bros</h2>
+          <h4>
+            Arugula, Bocconcini, Cherry Tomatoes, <br />
+            Parmesan
+          </h4>
+          <h3 id="price">$14.50</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="500"
+            height="500"
+            src="../assiets/theSaintJean.jpg"
+            alt=""
+          />
+          <h2>The Saint-jean</h2>
+          <h4>
+            Tomato sauce, Pepperoni, Ham, <br />
+            Bacon, BROS Sausage, Mozzarrella
+          </h4>
+          <h3 id="price">$14.50</h3>
+        </li>
+
+        <li id="cyp">
+          <img width="500" height="500" src="../assiets/greco.jpg" alt="" />
+          <h2>Greco</h2>
+          <h4>
+            Spinach, Onions, Fresh Tomatoes,<br />
+            Black and Green Olives, Feta
+          </h4>
+          <h3 id="price">$14.50</h3>
+        </li>
+      </ul>
+    </div>
+
+    <!-- menu three -->
+
+    <div style="display: none" id="Sand-wiches" class="menu">
+      <ul id="ul-cyp">
+        <li id="cyp">
+          <img width="500" height="500" src="../assiets/SandCesar.jpg" alt="" />
+          <h2>Chicken cesar</h2>
+          <h4>
+            Cesar Dressing, Mozzarella, Chicken, <br />
+            Bacon, Parmesan, Romaine Lettuce
+          </h4>
+          <h3 id="price">$14.50</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="500"
+            height="500"
+            src="../assiets/SandThevegetarian.jpg"
+            alt=""
+          />
+
+          <h2>The Vegetariane</h2>
+          <h4>
+            Pesto, Mozzarella, Sundried Tomatoes, <br />
+            Black Olives, Roasted Red Peppers, <br />
+            Portabello Mushrooms, Spinach, Goat Cheese
+          </h4>
+          <h3 id="price">$9.9</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="500"
+            height="500"
+            src="../assiets/SandItalian.jpg"
+            alt=""
+          />
+          <h2>Sandwich Italian</h2>
+          <h4>
+            Red Wine Vinaigrette, Mozzarella, Soppressata,<br />
+            Prosciutto, Pepperoni, <br />
+            Red Onions, Arugula, Cherry Tomatoes
+          </h4>
+          <h3 id="price">$9.9</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="500"
+            height="500"
+            src="../assiets/meat-sandwich.jpg"
+            alt=""
+          />
+          <h2>Meat Lover</h2>
+          <h4>
+            Red Wine Vinaigrette, Mozzarella, Pepperoni,<br />
+            Bacon, Ham, Arugula, <br />
+            Cherry Tomatoes
+          </h4>
+          <h3 id="price">$9.9</h3>
+        </li>
+      </ul>
+    </div>
+
+    <!-- menu four-->
+
+    <div style="display: none" id="salad" class="menu">
+      <ul id="ul-cyp">
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/SALADE_garden.jpg"
+            alt=""
+          />
+          <h2>Garden Salad</h2>
+          <h4>
+            Mixed Greens, Cherry Tomatoes, Cucumbers, <br />
+            Black Olives, House Dressing
+          </h4>
+          <h3>$12</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/SALADE_caesar.jpg"
+            alt=""
+          />
+          <h2>Caesar Salad</h2>
+          <h4>
+            Caesar Dressing, Croutons,<br />
+            Parmesan Cheese
+          </h4>
+          <h3>$12</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/SALADE_arugula.jpg"
+            alt=""
+          />
+          <h2>Arugula Salad</h2>
+          <h4>
+            Arugula, Roasted Red Peppers, <br />
+            Artichokes, Feta, <br />
+            Sunflower Seeds, Balsamic Dressing
+          </h4>
+          <h3>$12</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="500"
+            height="500"
+            src="../assiets/SALADE_spinach.jpg"
+            alt=""
+          />
+          <h2>Spinach Salad</h2>
+          <h4>
+            Baby Spinach, Goat Cheese, Walnuts, <br />
+            Dried Cranberries, Honey Mustard Dressing
+          </h4>
+          <h3>$12</h3>
+        </li>
+      </ul>
+    </div>
+
+    <!-- menu five -->
+
+    <div style="display: none" id="dessert" class="menu">
+      <ul id="ul-cyp">
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/canniolis-2.jpg"
+            alt=""
+          />
+          <h2>Cannolis</h2>
+
+          <h3>$5.99</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/chocolate-chip.jpg"
+            alt=""
+          />
+          <h2>Chocolate Chip</h2>
+
+          <h3>$5.99</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/salted-caramel.jpg"
+            alt=""
+          />
+          <h2>Salted Caramel Cookie</h2>
+
+          <h3>$5.99</h3>
+        </li>
+
+        <li id="cyp">
+          <img
+            width="600"
+            height="600"
+            src="../assiets/nutella-sticks-oreo.jpg"
+            alt=""
+          />
+          <h2>Focaccia Sticks</h2>
+
+          <h3>$11.99</h3>
+        </li>
+      </ul>
+    </div>
+
+    <!--  -->
+
+    <div id="contact">
+      <h1>LOCATION</h1>
+    </div>
+
+    <div id="location">
+      <ul id="location-box">
+        <li id="location-cont">
+          <div id="map" style="width: 400px; height: 400px">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="400"
+                  height="400"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Alexis%20Nihon%201500%20Atwater%20Ave,%20Montreal,%20Quebec%20H3Z%201X5&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >map widgets for websites</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 400px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <h3>Downton</h3>
+          <h5>
+            Alexis Nihon <br />
+            1500 Atwater Ave, Montreal, <br />
+            Quebec H3Z 1X5
+          </h5>
+        </li>
+        <li id="location-cont">
+          <div id="map" style="width: 400px; height: 400px">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="400"
+                  height="400"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=CF%20Fairview%20Pointe%20Claire&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 400px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >map widgets for websites</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 400px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <h3>West-Island</h3>
+          <h5>
+            CF Fairview Pointe Claire <br />
+            6801 Trans-Canada Hwy, Pointe-Claire, <br />
+            Quebec H9R 5J2
+          </h5>
+        </li>
+        <li id="location-cont">
+          <div id="map" style="width: 400px; height: 400px">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="400"
+                  height="400"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=CF%20Carrefour%20Laval&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 400px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >map widgets for websites</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 400px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <h3>Laval</h3>
+          <h5>
+            CF Carrefour Laval <br />
+            3003 Boulevard le Carrefour, <br />
+            Laval, QC H7T 1C7
+          </h5>
+        </li>
+      </ul>
+    </div>
+
+    <div id="contact">
+      <h1>CONTACT</h1>
+    </div>
+    <div id="contact-form">
+      <form style="" method="POST" id="cf">
+        <ul>
+          <li>
+            <input
+              size="1"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required="required"
+              aria-required="true"
+            />
+
+            <input
+              size="1"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required="required"
+              aria-required="true"
+            />
+            <input
+              size="1"
+              type="text"
+              id="Phone-Number"
+              name="Phone-Number"
+              placeholder="Phone Number"
+              required="required"
+              aria-required="true"
+            />
+          </li>
+          <li>
+            <input
+              size="1"
+              type="text"
+              id="message"
+              name="message"
+              style="width: 665px"
+              placeholder="message"
+              required="required"
+              aria-required="true"
+            />
+            <button
+              id="cf-button"
+              name="cf-button"
+              style="
+                width: 100px;
+                height: 50px;
+                background-color: black;
+                color: whitesmoke;
+                border: none;
+              "
+            >
+              Submit
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div id="footer">
+      <ul>
+        <li style="margin-top: 70px">@ alright reserved</li>
+        <li>
+          <img
+            style="width: 650px; height: 150px"
+            src="../assiets/companyLOGO.PNG"
+            alt=""
+          />
+        </li>
+        <li>
+          <ul>
+            <li>
+              <a href=""><img src="../assiets/instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assiets/facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../assiets/twitter.svg" alt="" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const contactForm = document.getElementById("cf");
+      const submitButton = document.getElementById("cf-button");
+
+      submitButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        const name = contactForm.name.value;
+        const phoneNumber = contactForm.Phone - Number.value;
+        const userMessage = contactForm.message.value;
+
+        if (name.length < 1 || name.length > 20) {
+          alert("Invalid Name! Please try with valid Input");
+          location.reload();
+        } else if (phoneNumber.length < 10 || phoneNumber.length > 13) {
+          alert("Invalid Phone Number! Please try with valid Number");
+          location.reload();
+        } else if (userMessage.length < 10 || userMessage.length > 50) {
+          alert(
+            "Invalid Input! Message Should ne conatain Min 10 word and Max 50 word"
+          );
+          location.reload();
+        } else {
+          alert("We received your message! We get back to you ASAP");
+          location.reload();
+        }
+      });
+    </script>
+  </body>
+  <script src="../functions/home.js"></script>
+</html>

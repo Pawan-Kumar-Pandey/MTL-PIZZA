@@ -1,0 +1,202 @@
+body{
+  background-image: url(../assiets/00/WOOD-BG.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+
+#addPizzaBtn,
+#addSandwichBtn,
+#addSaladBtn,
+#addDessertBtn,
+#checkOutBtn {
+  margin: 10px;
+  padding: 1px;
+  background-color: goldenrod;
+  color: black;
+  text-align: center;
+  height: 50px;
+  width: 500px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 100ms transform ease-out;
+  border-radius: 8px;
+}
+#addPizzaBtn:hover,
+#addSandwichBtn:hover,
+#addSaladBtn:hover,
+#addDessertBtn:hover,
+#checkOutBtn :hover {
+  transform: scale(1.1);
+  transition: 100ms transform ease-in;
+}
+
+
+
+
+
+.presentation{
+    display: none;
+}
+.fourPizza:hover + .presentation{
+    display: block;
+}
+
+#dashboardBody {
+  display: flex;
+}
+
+#dashboardMenu {
+  /* flex: 2; */
+}
+
+#ppt{
+  margin: 15PX;
+  padding: 15px;
+  /* justify-content: center; */
+  text-align: center;
+  color: white;
+  flex:3;
+
+}
+
+.das-menu ul li{
+  font-size: larger;
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: solid;
+
+
+}
+/* 
+.das-pizza .das-sandwich .des-dessert .des-salad img{
+  text-align: left;
+} */
+
+.das-pizza ul li{
+  font-size: larger;
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: solid;
+  justify-content: space-between;
+
+}
+.das-sandwich ul li{
+  font-size: larger;
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: solid;
+  justify-content: space-between;
+
+}
+
+.das-dessert ul li{
+  font-size: larger;
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: solid;
+  justify-content: space-between;
+
+}
+.das-salad ul li{
+  font-size: larger;
+  margin-top: 20px;
+  padding: 10px;
+  border-bottom: solid;
+  justify-content: space-between;
+
+}
+
+
+
+#totalDashboard {
+  color: white;
+  flex:1;
+  /* background-color: rgb(243, 241, 237); */
+  padding: 50px;
+}
+
+#cartTable {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/* menu-search bar */
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+/* #myMenu li{
+  display: flex;
+  justify-content: space-between;
+  
+} */
+
+#myMenu li a {
+  float: right;
+  display: flex;
+
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+#myMenu li a img{
+  width: 100px;
+  height: 100px;
+}

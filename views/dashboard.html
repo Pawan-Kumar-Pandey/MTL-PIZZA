@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/home.css" />
+    <!-- <link rel="stylesheet" href="../public/account.css" /> -->
+    <link rel="stylesheet" href="../public/dashboard.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <title>Dashboard</title>
+    
+  </head>
+  <body>
+    <div id="nav-bar">
+      <ul id="nav-element">
+        <li><img src="../assiets/companyLOGO.PNG" alt="" /></li>
+        <li><a id="nav-button" href="./home.html">HOME</a></li>
+        <li><a id="nav-button" href="./home.html">ABOUT</a></li>
+        <li><a id="nav-button" href="./home.html">MENU</a></li>
+        <li><a id="nav-button" href="./home.html">CONTACT</a></li>
+        <li style="float: right">
+          <a id="nav-button" href="./home.html">LOG OUT</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+    <div id="dashboardBody">
+      <div id="dashboardMenu">
+        <ul style="list-style: none; ">
+          <li>
+            <h2>Select Pizza</h1>
+            <ul style="list-style: none">
+              <li id="addPizzaBtn" class="fourPizza">4-Cheese</li>
+              <li id="addPizzaBtn">The Bros</li>
+              <li id="addPizzaBtn">The Saint-Jean</li>
+              <li id="addPizzaBtn">Greco</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Sandwich</h2>
+            <ul style="list-style: none">
+              <li id="addSandwichBtn">Chicken Caesar</li>
+              <li id="addSandwichBtn">The Vegetariane</li>
+              <li id="addSandwichBtn">Sandwich Italian</li>
+              <li id="addSandwichBtn">Meat Lover</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Salad</h2>
+            <ul style="list-style: none">
+              <li id="addSaladBtn">Garden Salad</li>
+              <li id="addSaladBtn">Caesar Salad</li>
+              <li id="addSaladBtn">Arugula Salad</li>
+              <li id="addSaladBtn">Spinach Salad</li>
+            </ul>
+          </li>
+          <li>
+             <h2>Dessert</h2>
+            <ul style="list-style: none">
+              <li id="addDessertBtn" name="hello">Cannolis</li>
+              <li id="addDessertBtn" name="hello">Chocolate Chip</li>
+              <li id="addDessertBtn" name="hello">Salted Caramel Cookie</li>
+              <li id="addDessertBtn">Focaccia Sticks</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- menu seach bar -->
+      <div id="ppt">
+
+        <div class="row">
+          <div class="left" style="background-color:#bbb;">
+            <h2>Menu</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+              <li><a href="#">4-FORMAGE PIZZA <img src="../assiets/00/4-FROMAGE-768x768.jpg" alt="">
+              </a></li>
+              <li><a href="#" >THE BROS PIZZA  <img src="../assiets/00/BROS-768x768.jpg" alt=""></a>
+              </li>
+              <li><a href="#">THE SAINT JEAN <img src="../assiets/00/SAINT-JEAN-768x768.jpg" alt=""></a>
+              </li>
+              <li><a href="#">GRECO PIZZA <img src="../assiets/00/GRECO-768x768.jpg" alt=""></a>
+              </li>
+              <li><a href="#"> CAESAR SALAD <img src="../assiets/00/SALADE1.jpg" alt=""></a>
+              </li>
+              <li><a href="#">SPINACH SALAD <img src="../assiets/00/SALADE2.jpg" alt=""></a></li>
+              <li><a href="#">ARUGULA SALAD <img src="../assiets/00/SALADE3.jpg" alt=""></a></li>
+              <li><a href="#">GARDEN SALAD <img src="../assiets/00/SALADE4.jpg" alt=""></a></li>
+              <li><a href="#">CAESAR SANDWICH <img src="../assiets/00/cesar-sandwich.jpg" alt=""></a></li>
+              <li><a href="#">VEGETARIAN SANDWICH <img src="../assiets/00/vegetarian-sandwich.jpg" alt=""></a></li>
+              <li><a href="#">MEAT LOVEER SANDWICH<img src="../assiets/00/meat-sandwich.jpg" alt=""></a></li>
+              <li><a href="#">SANDWICH ITALIAN <img src="../assiets/00/italian-sandwich.jpg" alt=""></a></li>
+              <li><a href="#">CANNOLIS <img src="../assiets/00/canniolis-2.jpg" alt=""></a></li>
+              <li><a href="#">CHOCOLATE CHIP  <img src="../assiets/00/chocolate-chip.jpg" alt=""></a></li>
+              <li><a href="#">SALTED CARAMEL  <img src="../assiets/salted-caramel.jpg" alt=""></a></li>
+              <li><a href="#">FOCACCIA STICK  <img src="../assiets/fourChees.jpg" alt=""></a></li>
+
+
+            </ul>
+          </div>
+          
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+<!-- total -->
+      <div id="totalDashboard">
+          <h2>
+              Item in cart
+          </h2>
+          <table id="cartTable">
+              <tr>
+                  <th>
+                      <h3>Item Name</h3>
+                  </th>
+                  <th>
+                      <h3>Price</h3>
+                  </th>
+
+              </tr>
+
+          </table>
+          <h3 id='totalPrice'>Total Price : <span></span></h3>
+           <button id="checkOutBtn" onclick="myFunctionThree()">Procide to Checkout</button> <br>
+           <button id= "checkOutBtn" class="delivery" onclick="myFunctionTwo()"> Click for Delivery</button>
+           <p>Order Now it Will be ready By <p id="time"></p> </p>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+
+      var d = new Date();
+      x= 30+d.getMinutes()
+      d.setMinutes(x);
+      document.getElementById("time").innerHTML = d;
+
+      function myFunctionThree(){
+        var t = document.getElementById("cartTable").rows.length;
+        if (t<=1){
+          alert("No Item In cart")
+        }
+        else{
+          alert("We recived you request your order Id = "+ Math.random())
+          location.reload();
+        }
+
+      }
+
+
+      function myFunctionTwo() {
+
+          alert("Sorry We are temporarily not avilabe for delivery!");
+}
+
+
+      </script>
+    
+  </body>
+  <script src="../functions/dashboard.js"></script>
+</html>
